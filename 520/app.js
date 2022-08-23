@@ -28,27 +28,27 @@ $(function () {
     var d = new createjs.Stage(b),
         e = new createjs.Shape((new createjs.Graphics).beginFill("#000").drawRect(0, 0, b.width + 1, b.height));
     e.alpha = .25, d.addChild(e), d.autoClear = !1;
-    var f = new createjs.Container, g = new createjs.Text("亲爱的小仙女，我们已经相识 ", "36px Josefin Slab", "#fff");
+    var f = new createjs.Container, g = new createjs.Text("亲爱的进进，这是你的第 ", "36px Josefin Slab", "#fff");
     g.x = 100, g.y = 80, f.addChild(g);
     var h = new createjs.Text("1", "bold 35px Josefin Slab", "#fff");
     h.x = 581, h.y = 80, f.addChild(h);
-    var i = new createjs.Text("3", "bold 35px Josefin Slab", "#fff");
+    var i = new createjs.Text("12", "bold 35px Josefin Slab", "#fff");
     i.x = 579, i.y = 60, i.alpha = 0, f.addChild(i);
-    var j = new createjs.Text("22", "bold 200px Josefin Slab", "#fff");
+    var j = new createjs.Text("24", "bold 200px Josefin Slab", "#fff");
     j.x = 530, j.y = 10, j.alpha = 0, f.addChild(j);
-    var k = new createjs.Text("   周", "35px Josefin Slab", "#fff");
-    k.x = 600, k.y = 80, f.addChild(k), d.addChild(f), createjs.Tween.get(h).wait(2e3).to({alpha: 0}, 500).to({text: 2}).wait(600).to({alpha: 1}, 500).wait(500).call(ib).to({
+    var k = new createjs.Text("   个生日", "35px Josefin Slab", "#fff");
+    k.x = 600, k.y = 80, f.addChild(k), d.addChild(f), createjs.Tween.get(h).wait(2e3).to({alpha: 0}, 500).to({text: 6}).wait(600).to({alpha: 1}, 500).wait(500).call(ib).to({
         y: 598,
         x: 579 + Math.random(-5, 5),
         rotation: Math.random(70, 100)
     }, 3e3, createjs.Ease.bounceOut).call(fb).to({alpha: 0}, 5e3), createjs.Tween.get(i).wait(6e3).to({
         y: 80,
         alpha: 1
-    }, 1e3).wait(800).to({y: 180, alpha: 0}, 1e3).to({text: 4, x: 560, y: 80}).wait(500).to({
+    }, 1e3).wait(800).to({y: 180, alpha: 0}, 1e3).to({text: 18, x: 560, y: 80}).wait(500).to({
         x: 579,
         alpha: 1
     }, 1e3).wait(800).to({x: 610, alpha: 0}, 1e3).to({
-        text: 5,
+        text: 20,
         x: 590,
         y: 90,
         scaleX: 0,
@@ -68,15 +68,15 @@ $(function () {
         alpha: 1
     }, 300, createjs.Ease.circInOut).call(hb);
     var l = new createjs.Container, m = new createjs.Text("缘分是如此的奇妙，让你我相识", "35px Josefin Slab", "#fff");
-    m.x = 420, m.y = 130, m.alpha = 0, l.addChild(m);
+    m.x = 300, m.y = 130, m.alpha = 0, l.addChild(m);
     var n = new createjs.Text("你对待生活的态度", "35px Josefin Slab", "#fff");
-    n.x = 598, n.y = 200, n.alpha = 0, l.addChild(n);
+    n.x = 400, n.y = 200, n.alpha = 0, l.addChild(n);
     var o = new createjs.Text("和", "35px Josefin Slab", "#fff");
-    o.x = 770, o.y = 290, o.alpha = 0, l.addChild(o);
+    o.x = 500, o.y = 290, o.alpha = 0, l.addChild(o);
     var p = new createjs.Text("对人生的思考，深深的吸引着我", "35px Josefin Slab", "#fff");
-    p.x = 520, p.y = 360, p.alpha = 0, l.addChild(p);
+    p.x = 400, p.y = 360, p.alpha = 0, l.addChild(p);
     var q = new createjs.Text("遇见你，是上天对我最大的恩赐", "35px Josefin Slab", "#fff");
-    q.x = 500, q.y = 430, q.alpha = 0, l.addChild(q), d.addChild(l), createjs.Tween.get(m).wait(16e3).to({
+    q.x = 300, q.y = 430, q.alpha = 0, l.addChild(q), d.addChild(l), createjs.Tween.get(m).wait(16e3).to({
         y: 150,
         alpha: 1
     }, 1e3), createjs.Tween.get(n).wait(18500).to({
@@ -87,7 +87,7 @@ $(function () {
         x: 750,
         alpha: 1
     }, 1e3, createjs.Ease.circOut), createjs.Tween.get(p).wait(23500).to({
-        x: 540,
+        x: 450,
         alpha: 1
     }, 1e3), createjs.Tween.get(q).wait(26e3).to({alpha: 1}, 2e3).call(fb);
     var r = 31e3;
