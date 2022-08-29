@@ -67,24 +67,24 @@ $(function () {
         color: "#fa67be",
         alpha: 1
     }, 300, createjs.Ease.circInOut).call(hb);
-    var l = new createjs.Container, m = new createjs.Text("缘分是如此的奇妙，让你我相识", "35px Josefin Slab", "#fff");
+    var l = new createjs.Container, m = new createjs.Text("也是我第一次真正的为你过生日", "35px Josefin Slab", "#fff");
     m.x = 300, m.y = 130, m.alpha = 0, l.addChild(m);
-    var n = new createjs.Text("你对待生活的态度", "35px Josefin Slab", "#fff");
-    n.x = 400, n.y = 200, n.alpha = 0, l.addChild(n);
-    var o = new createjs.Text("和", "35px Josefin Slab", "#fff");
+    var n = new createjs.Text("祝福你不止生日快乐，要每天快乐", "35px Josefin Slab", "#fff");
+    n.x = 350, n.y = 200, n.alpha = 0, l.addChild(n);
+    var o = new createjs.Text("温柔与爱", "35px Josefin Slab", "#fff");
     o.x = 500, o.y = 290, o.alpha = 0, l.addChild(o);
-    var p = new createjs.Text("对人生的思考，深深的吸引着我", "35px Josefin Slab", "#fff");
+    var p = new createjs.Text("永远是你最厉害的武器", "35px Josefin Slab", "#fff");
     p.x = 400, p.y = 360, p.alpha = 0, l.addChild(p);
-    var q = new createjs.Text("遇见你，是上天对我最大的恩赐", "35px Josefin Slab", "#fff");
+    var q = new createjs.Text("最近我们的感情出了一点点问题，但没关系", "35px Josefin Slab", "#fff");
     q.x = 300, q.y = 430, q.alpha = 0, l.addChild(q), d.addChild(l), createjs.Tween.get(m).wait(16e3).to({
         y: 150,
         alpha: 1
     }, 1e3), createjs.Tween.get(n).wait(18500).to({
-        x: 598,
+        x: 400,
         y: 220,
         alpha: 1
     }, 1e3, createjs.Ease.circOut), createjs.Tween.get(o).wait(21e3).to({
-        x: 750,
+        x: 550,
         alpha: 1
     }, 1e3, createjs.Ease.circOut), createjs.Tween.get(p).wait(23500).to({
         x: 450,
@@ -127,8 +127,8 @@ $(function () {
     }
     d.addChild(Y);
     for (var bb = Y.getNumChildren(), z = 0; bb > z; z++) createjs.Tween.get(Y.getChildAt(z)).wait(X + Math.random(400, 1600)).to({alpha: Math.random(0, .6, 2)}, 500, createjs.Ease.bounceOut);
-    var cb = new createjs.Container, db = new createjs.Text("为最美的你，永远的小仙女……希望你幸福永远", "35px Josefin Slab", "#fff");
-    db.x = 210, db.y = 510, db.alpha = 0, cb.addChild(db), d.addChild(cb);
+    var cb = new createjs.Container, db = new createjs.Text("已经决定要走下去，我也不会轻易放弃", "35px Josefin Slab", "#fff");
+    db.x = 230, db.y = 510, db.alpha = 0, cb.addChild(db), d.addChild(cb);
     var eb = X + 1600 + 1e3;
     createjs.Tween.get(db).wait(eb).to({alpha: 1}, 3e3), createjs.Ticker.addListener(jb)
 });
