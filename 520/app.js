@@ -28,7 +28,7 @@ $(function () {
     var d = new createjs.Stage(b),
         e = new createjs.Shape((new createjs.Graphics).beginFill("#000").drawRect(0, 0, b.width + 1, b.height));
     e.alpha = .25, d.addChild(e), d.autoClear = !1;
-    var f = new createjs.Container, g = new createjs.Text("亲爱的进进，这是你的第 ", "36px Josefin Slab", "#fff");
+    var f = new createjs.Container, g = new createjs.Text("亲爱的小王进，这是你的第 ", "36px Josefin Slab", "#fff");
     g.x = 100, g.y = 80, f.addChild(g);
     var h = new createjs.Text("1", "bold 35px Josefin Slab", "#fff");
     h.x = 581, h.y = 80, f.addChild(h);
@@ -127,7 +127,7 @@ $(function () {
     }
     d.addChild(Y);
     for (var bb = Y.getNumChildren(), z = 0; bb > z; z++) createjs.Tween.get(Y.getChildAt(z)).wait(X + Math.random(400, 1600)).to({alpha: Math.random(0, .6, 2)}, 500, createjs.Ease.bounceOut);
-    var cb = new createjs.Container, db = new createjs.Text("已经决定要走下去，我也不会轻易放弃", "35px Josefin Slab", "#fff");
+    var cb = new createjs.Container, db = new createjs.Text("约定要一直走下去，我们不会轻易放弃", "35px Josefin Slab", "#fff");
     db.x = 230, db.y = 510, db.alpha = 0, cb.addChild(db), d.addChild(cb);
     var eb = X + 1600 + 1e3;
     createjs.Tween.get(db).wait(eb).to({alpha: 1}, 3e3), createjs.Ticker.addListener(jb)
